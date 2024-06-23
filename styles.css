@@ -7,32 +7,40 @@ body {
 }
 
 header {
-    background-color: #333333;
-    padding: 20px;
     text-align: center;
 }
 
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
 header h1 {
-    margin: 0;
+    margin: 20px 0;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333333;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
     color: #ffffff;
     text-decoration: none;
+    padding: 15px 20px;
+    display: block;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    background-color: #555555;
 }
 
 main {
@@ -66,6 +74,6 @@ article img {
 footer {
     background-color: #333333;
     text-align: center;
-    padding: 20px; /* Increase padding */
-    margin-top: 40px; /* Add margin to create space */
+    padding: 20px;
+    margin-top: 40px;
 }
