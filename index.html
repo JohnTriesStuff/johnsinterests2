@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-      <div class="banner">
+        <div class="banner">
             <img src="images/bannerhome.jpg" alt="Banner Image">
         </div>
         <h1>Welcome to John's 3am Curiosities</h1>
@@ -27,17 +27,23 @@
             <h2>Curiosities</h2>
             <p>Your source of oddities around the world (by my standards).</p>
         </section>
-        <!-- Visitor Counter Section -->
         <section id="counter">
-            <h2>Visitor Counter</h2>
-            <!-- Insert the FreeCounter code snippet here -->
-            <div id="free-counter"></div>
-            <script type="text/javascript" src="https://www.freecounterstat.com/counter.php?foo=your-counter-id"></script>
+            <h2>Visitor Count: <span id="visitor-count">Loading...</span></h2>
         </section>
     </main>
     
     <footer>
         <p>&copy; 2024 John's Curiosities. All rights reserved.</p>
     </footer>
+
+    <script>
+        async function updateVisitorCount() {
+            const response = await fetch('https://api.countapi.xyz/hit/your-namespace/your-key');
+            const data = await response.json();
+            document.getElementById('visitor-count').innerText = data.value;
+        }
+
+        updateVisitorCount();
+    </script>
 </body>
 </html>
