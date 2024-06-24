@@ -25,7 +25,7 @@
     <main>
         <article>
             <h2>112 Ocean Avenue</h2>
-            <img src="images/112oceanavenue.jpg" alt="112 Ocean Avenue" class="center-img">
+            <img src="images/112oceanavenue.webp" alt="112 Ocean Avenue" class="center-img">
             <p>112 Ocean Avenue, famously known as the Amityville Horror House, is a large Dutch Colonial house situated in the suburban neighborhood of Amityville, on the south shore of Long Island, New York. The house became the site of one of the most notorious hauntings in American history.</p>
             <!-- Add more content about 112 Ocean Avenue here -->
         </article>
