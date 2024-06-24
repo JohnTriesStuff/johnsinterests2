@@ -90,7 +90,28 @@ footer {
     margin-top: 40px;
 }
 
-/* Add this to your existing styles.css file */
+/* Gallery Styles */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.gallery-item {
+    flex: 1 1 calc(33.333% - 20px); /* Adjust percentage to fit your layout */
+    box-sizing: border-box;
+    max-width: calc(33.333% - 20px); /* Adjust percentage to fit your layout */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Visitor Counter Styles */
 #counter {
     text-align: center;
     margin-top: 20px;
