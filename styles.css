@@ -89,3 +89,9 @@ footer {
     padding: 20px;
     margin-top: 40px;
 }
+
+/* Add this to your existing styles.css file */
+#counter {
+    text-align: center;
+    margin-top: 20px;
+}
